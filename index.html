@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Java & Scripts</title>
+</head>
+<body>
+    <section id="nav">
+        <div class="nav-bar nav-bar--topshadow">
+            <i class="nav-bar__button fa-solid fa-circle-user nav-bar__icon--brand-color fa-2x"></i>
+            <i class="nav-bar__button fa-solid fa-location-dot nav-bar__icon--brand-color fa-2x"></i>
+            <i class="nav-bar__button fa-solid fa-cart-shopping nav-bar__icon--brand-color fa-2x"></i>
+        </div>
+    </section>
+    <section id="app">
+        <div class="app-bar app-bar--bottomshadow">
+            <div class="app-bar__brand"><img class="app-bar__item app-bar__brand-image" src="Brand-Logo.png"><h1 class="brand__text--brand-color">Java & Scripts</h1>
+            </div>
+            <i class="app-bar__item app-bar__icon--brand-color fa-solid fa-bars fa-2x"></i>
+        </div>
+    </section>
+    <div class="content">
+        <div class="content__section1--image">
+            <div class="section1__image-text">
+                <h1>Your morning starts here.</h1>
+                <div>
+                    <form method="post">
+                        <h2>Name</h2>
+                        <input type="text">
+                        <h2>Order Type</h2>
+                        <input type="radio" name="order-type" id="pickup" value="pickup">
+                        <label for="pickup">Pick-Up (15 minutes)</label>
+                        <input type="radio" name="order-type" id="delivery" value="delivery">
+                        <label for="delivery">Delivery (ASAP)</label>
+                        <h2>Order</h2>
+                        <select>
+                            <optgroup value="order">
+                                <option value="tea">Tea</option>
+                                <option value="coffee">Coffee</option>
+                                <option value="book">Book of the Day</option>
+                            </optgroup>
+                        </select>
+                        <h2>Special Instructions / Delivery</h2>
+                        <textarea id="special-instructions" name="special-instructions" rows="2" cols="30"></textarea>
+                        <br/>
+                        <button type="submit">Place Your Order Now</button>
+                    </form>
+                </div>
+            </div>
+            <img class="section1__background-image">
+        </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/d89fdf12fd.js" crossorigin="anonymous"></script>
+</body>
+</html>
